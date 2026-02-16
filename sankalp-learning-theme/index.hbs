@@ -1,0 +1,16 @@
+{{!< default}}
+<section class="post-list">
+    {{#foreach posts}}
+        <article class="post-card">
+            <a href="{{url}}">
+                {{#if feature_image}}
+                    <img src="{{feature_image}}" alt="{{title}}">
+                {{/if}}
+                <h2>{{title}}</h2>
+            </a>
+            <p>{{excerpt words="25"}}</p>
+            <time>{{date format="DD MMM YYYY"}}</time>
+        </article>
+    {{/foreach}}
+</section>
+{{pagination}}

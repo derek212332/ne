@@ -1,0 +1,11 @@
+{{!< default}}
+<article class="post">
+    <h1>{{title}}</h1>
+    <time>{{date format="DD MMM YYYY"}}</time>
+    {{#if feature_image}}
+        <img src="{{feature_image}}" alt="{{title}}">
+    {{/if}}
+    <div class="post-content">
+        {{content}}
+    </div>
+</article>
